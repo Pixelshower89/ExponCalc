@@ -1,5 +1,6 @@
+import subprocess
 	#An exponents calculator developed by Pixelshower89
-
+music = subprocess.Popen(["afplay", "./soundtrack.wav"])
 print('Hello, and welcome to the Exponents calculator!  X will be raised to the power of Y')
 raw_x = raw_input("What will X be? ")
 raw_y = raw_input('What will Y be? ')
@@ -13,3 +14,4 @@ else:
 	print("Using letters will crash the program.  Please us numbers in the future.")
 	print("thank you for using Pixelshower89's Exponents calculator")
 
+music.kill()
